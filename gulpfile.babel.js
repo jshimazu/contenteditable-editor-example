@@ -24,7 +24,7 @@ const DEST = `${HTDOCS}${BASE_PATH}`;
 
 const revLogger = new RevLogger({
     'style.css': `${DEST}/css/style.css`,
-    'script.js': `${DEST}/js/script.js`
+    'app.js': `${DEST}/js/app.js`
 });
 
 
@@ -42,10 +42,10 @@ gulp.task('css', gulp.series('sass'));
 
 // js
 gulp.task('browserify', () => {
-    return browserify(`${SRC}/js/script.js`)
+    return browserify(`${SRC}/js/app.js`, { debug: true })
         .transform(babelify)
         .bundle()
-        .pipe(source('script.js'))
+        .pipe(source('app.js'))
         .pipe(gulp.dest(`${DEST}/js`));
 });
 

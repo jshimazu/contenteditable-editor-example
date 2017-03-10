@@ -41,5 +41,10 @@
     "presets": [
       "es2015"
     ]
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.23.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }

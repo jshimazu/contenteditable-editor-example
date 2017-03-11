@@ -12,7 +12,7 @@ const EditorContainer = ({editor, actions}) => {
     return (
         <div>
             <EditorHeader />
-            <EditorInput changeHTML={actions.changeHTML}/>
+            <EditorInput changeHTML={actions.changeHTML} currentHTML={editor.html} />
             <EditorFooter changeDecorateType={actions.changeDecorateType} />
         </div>
     );

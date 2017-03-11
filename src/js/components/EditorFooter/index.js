@@ -2,32 +2,29 @@
  * Editor Controller
  */
 import { Component, PropTypes } from 'react';
-import style from './controller.css';
+import style from './style.css';
+import { DECORATE_TYPE } from '../../constants/editor';
 
 export default class extends Component {
     static propTypes = {
-        filter: PropTypes.object.isRequired,
-    };
-
-    state = {
-        currentType: this.props.filter.TYPE.TEXT,
+        changeDecorateType: PropTypes.func.isRequired
     };
 
     handleClickHeader = () => {
         console.log("click header");
-        this.setState({
-            currentType: this.props.filter.TYPE.HEADER1
-        });
+        this.props.changeDecorateType(DECORATE_TYPE.HEADER1);
     }
 
     handleClickQuote = () => {
         // TODO
         console.log("click quote");
+        this.props.changeDecorateType(DECORATE_TYPE.QUOTE);
     }
 
     handleClickHighlight = () => {
         // TODO
         console.log("click highlight");
+        this.props.changeDecorateType(DECORATE_TYPE.HIGHLIGHT);
     }
 
     render() {

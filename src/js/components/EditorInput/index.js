@@ -2,11 +2,11 @@
  * Editor Input Field
  */
 import { Component, PropTypes } from 'react';
-import style from './input-field.css';
+import style from './style.css';
 
 export default class extends Component {
     static propTypes = {
-        filter: PropTypes.object.isRequired,
+        changeHTML: PropTypes.func.isRequired,
     };
 
     componentDidMount() {
@@ -23,8 +23,7 @@ export default class extends Component {
 
     handleChangeDOM = () => {
         const html = this.refs.root.innerHTML;
-        const filter = this.props.filter;
-        filter.setHTML(html);
+        this.props.changeHTML(html);
     }
 
     render() {

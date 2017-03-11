@@ -1,8 +1,8 @@
 /**
  * Editor Navigation
  */
-import { Component } from 'react';
-import style from './navi.css';
+import { Component, PropTypes } from 'react';
+import style from './style.css';
 
 export default class extends Component {
     render() {

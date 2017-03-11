@@ -1,9 +1,17 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Editor from './components/Editor/index.js';
+import Editor from './containers/Editor';
+
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducer from './reducers';
 window.React = React;
 
+const store = createStore(reducer);
+
 render(
-    <Editor />,
+    <Provider store={store}>
+        <Editor />
+    </Provider>,
     document.getElementById('root'),
 );

@@ -3,34 +3,9 @@ import style from './index.css';
 import Navi from './navi.js';
 import Controller from './controller.js';
 import InputField from './input-field.js';
-import EditorStructure from '../../lib/editor-structure.js';
+import EditorFilter from '../../lib/editor-filter.js';
 
 export default class extends Component {
-    example = {
-        body: [
-            {
-                type: "h1",
-                content: "adsfasdfasdf",
-            },
-            {
-                type: "text",
-                content: "adsfasdfasdf",
-            },
-            {
-                type: "text",
-                content: "asdfasdfasdfasdf"
-            },
-            {
-                type: "list",
-                content: "asdfasdfasdfasdf",
-            },
-            {
-                type: "list",
-                content: "asdfasdfadsfjk",
-            },
-        ]
-    }
-
     state = {
         inputFieldState: {
             currentX: 0,
@@ -44,22 +19,27 @@ export default class extends Component {
 
     constructor() {
         super();
-        this.structure = new EditorStructure();
+        this.filter = new EditorFilter();
     }
 
-    updateStructure = (html) => {
-        this.structure.update(html);
+    setHTML = (html) => {
+        this.filter.setHTML(html);
     }
 
     setType = (type) => {
+        this.filter.setType(type);
+    }
+
+    setCursor = (x, y) => {
+        this.filter.setCursor();
     }
 
     render() {
         return (
             <div>
                 <Navi />
-                <InputField updateStructure={this.updateStructure} />
-                <Controller setType={this.setType} />
+                <InputField filter={this.filter} />
+                <Controller filter={this.filter} />
             </div>
         );
     }

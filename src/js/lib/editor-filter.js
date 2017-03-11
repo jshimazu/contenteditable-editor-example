@@ -22,8 +22,12 @@ export default class extends EventEmitter {
 
         this.TYPE = {
             TEXT: 'text',
-            HEADER1: 'change',
+            HEADER1: 'header_1',
         };
+
+        this.typeElementMap = {
+            this.TYPE.TEXT: '',
+        }
 
         this.currentHTML = '';
         this.currentType = this.TYPE.TEXT;
@@ -31,10 +35,11 @@ export default class extends EventEmitter {
         this.currentCursorY = 0;
 
         this.on(this.EVENT.CHANGE_TYPE, this.handleChangeType);
+        this.on(this.EVENT.CHANGE_HTML, this.handleChangeHTML);
     }
 
     setHTML(html) {
-        this.currentHTML = html;
+        this.currentHTML = this.filterHTML(html);
         this.emit(this.EVENT.CHANGE_HTML, html);
     }
 
@@ -49,8 +54,20 @@ export default class extends EventEmitter {
         this.emit(this.EVENT.CHANGE_CURSOR, [x, y]);
     }
 
+    getFilteredHTML() {
+        return this.currentHTML;
+    }
+
+    filterHTML(html) {
+        // TODO
+        return html += "<div>追記してみた</div>";
+    }
+
     handleChangeType = () => {
-        console.log(this.handleChangeType);
-        this.setHTML(HTML);
+        console.log(this.currentHTML);
+    }
+
+    handleChangeHTML = () => {
+        console.log(this.currentHTML);
     }
 }

@@ -1,0 +1,7 @@
+.wrapper {
+    box-sizing: border-box;
+    padding: calc(56px + 16px) 16px;
+    /* TODO buggy */
+    height: calc(100vh - 112px);
+    font-size: 1.2em;
+}

@@ -1,8 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Editor from './components/Editor';
+import Editor from './components/Editor/index.js';
 window.React = React;
-console.log(document.getElementById('root'));
 
 render(
     <Editor />,

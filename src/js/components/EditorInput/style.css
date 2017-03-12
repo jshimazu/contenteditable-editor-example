@@ -1,8 +1,31 @@
 .wrapper {
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
     box-sizing: border-box;
     padding: calc(56px + 16px) 16px;
     /* TODO buggy */
     height: calc(100vh - 112px);
-    font-size: 1.2em;
     line-height: 2em;
+}
+
+.titleWrapper {
+    width: 100%;
+    padding: 16px 0;
+}
+.title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.2em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 0.5em;
+}
+
+.content {
+    font-size: 1.2em;
+    height: calc(100vh - 168px);
+    outline: none;
 }

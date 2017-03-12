@@ -1926,6 +1926,12 @@ elliptic@^6.0.0:
     hash.js "^1.0.0"
     inherits "^2.0.1"
 
+embed-js:
+  version "4.1.17"
+  resolved "https://registry.yarnpkg.com/embed-js/-/embed-js-4.1.17.tgz#f49f0a41d55993bfbbbb306b2ab540d2fb3c2593"
+  dependencies:
+    unfetch "^2.0.0"
+
 emitter-steward@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/emitter-steward/-/emitter-steward-1.0.0.tgz#f3411ade9758a7565df848b2da0cbbd1b46cbd64"
@@ -3280,6 +3286,10 @@ localtunnel@^1.7.0:
     openurl "1.1.0"
     request "2.65.0"
     yargs "3.29.0"
+
+lodash:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 lodash-es@^4.2.0, lodash-es@^4.2.1:
   version "4.17.4"
@@ -5451,6 +5461,10 @@ undertaker@^1.0.0:
     lodash.map "^4.1.0"
     lodash.reduce "^4.1.0"
     undertaker-registry "^1.0.0"
+
+unfetch@^2.0.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-2.1.2.tgz#684fee4d8acdb135bdb26c0364c642fc326ca95b"
 
 unique-stream@^2.0.2:
   version "2.2.1"

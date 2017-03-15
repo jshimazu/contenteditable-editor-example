@@ -20,7 +20,7 @@ import cssModulesify from 'css-modulesify';
 // const
 const SRC = './src';
 const CONFIG = './src/config';
-const HTDOCS = './public';
+const HTDOCS = './docs';
 const BASE_PATH = '';
 const DEST = `${HTDOCS}${BASE_PATH}`;
 
@@ -51,7 +51,7 @@ gulp.task('browserify', () => {
             css
             .pipe(source('modules.min.css'))
             //.pipe(streamify(postcss(cssProcessors)))
-            .pipe(gulp.dest('public/css/'));
+            .pipe(gulp.dest(`${HTDOCS}/css/`));
         })
         .bundle()
         .pipe(source('app.js'))

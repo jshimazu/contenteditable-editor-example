@@ -1,0 +1,78 @@
+._src_js_components_EditorHeader_style__wrapper {
+    background: #fff;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 56px;
+    padding: 16px;
+    border-bottom: 1px solid #666;
+}
+
+._src_js_components_EditorHeader_style__back {
+    position: absolute;
+    top: 0; left: 0;
+    font-size: 32px;
+    margin-left: 16px;
+}
+
+._src_js_components_EditorHeader_style__submit {
+    position: absolute;
+    top: 0; right: 0;
+    font-size: 32px;
+    margin-right: 16px;
+}
+._src_js_components_EditorFooter_style__wrapper {
+    background: #fff;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #666;
+    font-size: 24px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+._src_js_components_EditorFooter_style__wrapper i {
+    margin-right: 24px;
+}
+
+._src_js_components_EditorFooter_style__file {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0; left: 200%;
+}
+._src_js_components_EditorInput_style__wrapper {
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: calc(56px + 16px) 16px;
+    /* TODO buggy */
+    height: calc(100vh - 112px);
+    line-height: 2em;
+}
+
+._src_js_components_EditorInput_style__titleWrapper {
+    width: 100%;
+    padding: 16px 0;
+}
+._src_js_components_EditorInput_style__title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.2em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 0.5em;
+}
+
+._src_js_components_EditorInput_style__content {
+    font-size: 1.2em;
+    height: calc(100vh - 168px);
+    outline: none;
+}

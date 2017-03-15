@@ -8,7 +8,7 @@ import EditorFooter from '../components/EditorFooter';
 import EditorInput from '../components/EditorInput';
 
 const EditorContainer = ({editor, actions}) => {
-    console.log(editor, actions);
+    console.log(editor);
     return (
         <div>
             <EditorHeader />

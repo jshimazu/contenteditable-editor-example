@@ -1,3 +1,26 @@
+._src_js_components_EditorFooter_style__wrapper {
+    background: #fff;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #666;
+    font-size: 24px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+._src_js_components_EditorFooter_style__wrapper i {
+    margin-right: 24px;
+}
+
+._src_js_components_EditorFooter_style__file {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0; left: 200%;
+}
 ._src_js_components_EditorHeader_style__wrapper {
     background: #fff;
     box-sizing: border-box;
@@ -21,29 +44,6 @@
     top: 0; right: 0;
     font-size: 32px;
     margin-right: 16px;
-}
-._src_js_components_EditorFooter_style__wrapper {
-    background: #fff;
-    width: 100%;
-    height: 56px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-top: 1px solid #666;
-    font-size: 24px;
-    padding: 8px 16px;
-    box-sizing: border-box;
-}
-
-._src_js_components_EditorFooter_style__wrapper i {
-    margin-right: 24px;
-}
-
-._src_js_components_EditorFooter_style__file {
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: 0; left: 200%;
 }
 ._src_js_components_EditorInput_style__wrapper {
     width: 100%;

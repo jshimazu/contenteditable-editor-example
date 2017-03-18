@@ -2,18 +2,23 @@
  * Index
  */
 import { Component, PropTypes } from 'react';
-import style from './style.css';
 import { Link } from 'react-router-dom';
+
+const style = {
+    wrapper: {
+        textAlign: "center",
+    }
+};
 
 export default class extends Component {
     render() {
         return (
-            <div>
+            <div style={style.wrapper}>
                 <p>
-                    <Link to="/editor-scratch">オリジナルエディタ</Link>
+                    <Link to="/editor-scratch">フルスクラッチMock</Link>
                 </p>
                 <p>
-                    <Link to="/editor-quill">Quillエディタ</Link>
+                    <a href="http://codepen.io/alexkrolick/full/xgyOXQ/">React-Quiil（ライブラリ）</a>
                 </p>
             </div>
         );
